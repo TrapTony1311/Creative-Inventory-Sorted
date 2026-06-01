@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "creative-inventory-sorting",
+	"version": "${version}",
+	"name": "Creative Inventory Sorted",
+	"description": "A neat sort of the creative inventory",
+	"authors": [
+		"PhenixTheCat"
+	],
+	"contact": {
+		"sources": "https://github.com/TrapTony1311/Creative-Inventory-Sorted"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/creative-inventory-sorting/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"phenix.creasorting.modid.CreativeInventorySorting"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
