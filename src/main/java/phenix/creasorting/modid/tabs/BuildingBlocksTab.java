@@ -264,6 +264,26 @@ public class BuildingBlocksTab implements TabSorter {
         ids.add("minecraft:polished_blackstone_brick_slab");
         ids.add("minecraft:polished_blackstone_brick_wall");
 
+        ids.add("minecraft:nether_bricks");
+        ids.add("minecraft:nether_brick_stairs");
+        ids.add("minecraft:nether_brick_slab");
+        ids.add("minecraft:nether_brick_wall");
+        ids.add("minecraft:cracked_nether_bricks");
+        ids.add("minecraft:chiseled_nether_bricks");
+        ids.add("minecraft:nether_brick_fence");
+        ids.add("minecraft:obsidian");
+        ids.add("minecraft:crying_obsidian");
+        
+        ids.add("minecraft:red_nether_bricks");
+        ids.add("minecraft:red_nether_brick_stairs");
+        ids.add("minecraft:red_nether_brick_slab");
+        ids.add("minecraft:red_nether_brick_wall");
+        ids.add("minecraft:soul_sand");
+        ids.add("minecraft:soul_soil");
+        ids.add("minecraft:netherrack");
+        ids.add("minecraft:magma_block");
+        ids.add("minecraft:shroomlight");
+
         ids.add("minecraft:bricks");
         ids.add("minecraft:brick_stairs");
         ids.add("minecraft:brick_slab");
@@ -293,36 +313,7 @@ public class BuildingBlocksTab implements TabSorter {
         ids.add("minecraft:prismarine_brick_stairs");
         ids.add("minecraft:prismarine_brick_slab");
         ids.add("minecraft:dried_kelp_block");
-
-        ids.add("minecraft:end_stone_bricks");
-        ids.add("minecraft:end_stone_brick_stairs");
-        ids.add("minecraft:end_stone_brick_slab");
-        ids.add("minecraft:end_stone_brick_wall");
-        ids.add("minecraft:end_stone");
-        ids.add("minecraft:purpur_block");
-        ids.add("minecraft:purpur_stairs");
-        ids.add("minecraft:purpur_slab");
-        ids.add("minecraft:purpur_pillar");
-
-        ids.add("minecraft:red_nether_bricks");
-        ids.add("minecraft:red_nether_brick_stairs");
-        ids.add("minecraft:red_nether_brick_slab");
-        ids.add("minecraft:red_nether_brick_wall");
-        ids.add("minecraft:soul_sand");
-        ids.add("minecraft:soul_soil");
-        ids.add("minecraft:obsidian");
-        ids.add("minecraft:crying_obsidian");
-        ids.add("minecraft:shroomlight");
-
-        ids.add("minecraft:nether_bricks");
-        ids.add("minecraft:nether_brick_stairs");
-        ids.add("minecraft:nether_brick_slab");
-        ids.add("minecraft:nether_brick_wall");
-        ids.add("minecraft:cracked_nether_bricks");
-        ids.add("minecraft:chiseled_nether_bricks");
-        ids.add("minecraft:nether_brick_fence");
-        ids.add("minecraft:netherrack");
-        ids.add("minecraft:magma_block");
+        
     }
 
     private static void addQuartzAndSandstoneMatrix(List<String> ids) {
@@ -363,6 +354,16 @@ public class BuildingBlocksTab implements TabSorter {
         ids.add("minecraft:cut_red_sandstone_slab");
         ids.add("minecraft:smooth_red_sandstone_slab");
         ids.add("minecraft:red_sandstone_slab");
+
+        ids.add("minecraft:end_stone_bricks");
+        ids.add("minecraft:end_stone_brick_stairs");
+        ids.add("minecraft:end_stone_brick_slab");
+        ids.add("minecraft:end_stone_brick_wall");
+        ids.add("minecraft:end_stone");
+        ids.add("minecraft:purpur_block");
+        ids.add("minecraft:purpur_stairs");
+        ids.add("minecraft:purpur_slab");
+        ids.add("minecraft:purpur_pillar");
     }
 
     private static void addOresAndSpecialMatrix(List<String> ids) {
