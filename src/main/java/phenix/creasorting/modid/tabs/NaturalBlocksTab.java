@@ -66,39 +66,39 @@ public class NaturalBlocksTab implements TabSorter {
         "minecraft:dirt_path",
         "minecraft:crimson_nylium",
         "minecraft:warped_nylium",
-        "minecraft:moss_block",
-        "minecraft:pale_moss_block",
-        "minecraft:slime_block",
+        "minecraft:mud",
+        "minecraft:muddy_mangrove_roots",
+        "minecraft:mangrove_roots",
 
         "minecraft:dirt",
         "minecraft:coarse_dirt",
         "minecraft:rooted_dirt",
         "minecraft:farmland",
-        "minecraft:dripstone_block",
-        "minecraft:pointed_dripstone",
-        "minecraft:mud",
-        "minecraft:muddy_mangrove_roots",
-        "minecraft:mangrove_roots",
+        "minecraft:nether_wart_block",
+        "minecraft:warped_wart_block",
+        "minecraft:mushroom_stem",
+        "minecraft:brown_mushroom_block",
+        "minecraft:red_mushroom_block",
 
-        "minecraft:snow_block",
-        "minecraft:snow",
-        "minecraft:bee_nest",
+        "minecraft:pumpkin",
+        "minecraft:carved_pumpkin",
+        "minecraft:jack_o_lantern",
         "minecraft:honeycomb_block",
         "minecraft:honey_block",
+        "minecraft:bee_nest",
+        "minecraft:snow",
+        "minecraft:snow_block",
+        "minecraft:calcite",
+
         "minecraft:hay_block",
         "minecraft:sponge",
         "minecraft:wet_sponge",
-        "minecraft:bamboo_block",
-
+        "minecraft:melon",
+        "minecraft:slime_block",
         "minecraft:ice",
         "minecraft:packed_ice",
         "minecraft:blue_ice",
-        "minecraft:calcite",
-        "minecraft:clay",
-        "minecraft:terracotta",
-        "minecraft:brown_mushroom_block",
-        "minecraft:red_mushroom_block",
-        "minecraft:mushroom_stem"
+        "minecraft:clay"
     );
 
     private static List<String> buildFullOrder() {
@@ -113,18 +113,18 @@ public class NaturalBlocksTab implements TabSorter {
         ids.add("minecraft:acacia_leaves");
         ids.add("minecraft:dark_oak_leaves");
         ids.add("minecraft:mangrove_leaves");
-        ids.add("minecraft:cherry_leaves");
-        ids.add("minecraft:mangrove_roots");
-
-        ids.add("minecraft:flowering_azalea_leaves");
         ids.add("minecraft:azalea_leaves");
-        ids.add("minecraft:moss_block");
+        ids.add("minecraft:flowering_azalea_leaves");
+
+        ids.add("minecraft:cherry_leaves");
+        ids.add("minecraft:pale_oak_leaves");
+        ids.add("minecraft:creaking_heart");
+        ids.add("minecraft:pale_moss_block");
+        ids.add("minecraft:pale_moss_carpet");
         ids.add("minecraft:moss_carpet");
+        ids.add("minecraft:moss_block");
         ids.add("minecraft:azalea");
         ids.add("minecraft:flowering_azalea");
-        ids.add("minecraft:pale_moss_block");
-        ids.add("minecraft:pale_oak_leaves");
-        ids.add("minecraft:pale_moss_carpet");
 
         ids.add("minecraft:oak_sapling");
         ids.add("minecraft:spruce_sapling");
@@ -175,42 +175,49 @@ public class NaturalBlocksTab implements TabSorter {
         ids.add("minecraft:pink_petals");
         ids.add("minecraft:wildflowers");
         ids.add("minecraft:leaf_litter");
-        ids.add("minecraft:crimson_fungus");
+
         ids.add("minecraft:warped_fungus");
+        ids.add("minecraft:crimson_fungus");
+        ids.add("minecraft:nether_sprouts");
         ids.add("minecraft:crimson_roots");
         ids.add("minecraft:warped_roots");
         ids.add("minecraft:weeping_vines");
         ids.add("minecraft:twisting_vines");
-        ids.add("minecraft:nether_wart_block");
-        ids.add("minecraft:warped_wart_block");
-        ids.add("minecraft:nether_sprouts");
+        ids.add("minecraft:nether_wart");
+        ids.add("minecraft:dried_ghast");
+        
         ids.add("minecraft:red_mushroom");
         ids.add("minecraft:brown_mushroom");
         ids.add("minecraft:glow_lichen");
         ids.add("minecraft:hanging_roots");
         ids.add("minecraft:pale_hanging_moss");
         ids.add("minecraft:resin_clump");
-        ids.add("minecraft:creaking_heart");
-        ids.add("minecraft:dried_ghast");
-        ids.add("minecraft:nether_wart");
+        ids.add("minecraft:chorus_plant");
+        ids.add("minecraft:chorus_flower");
+        ids.add("minecraft:dragon_egg");
+        
+
         ids.add("minecraft:wheat_seeds");
         ids.add("minecraft:potato");
-        ids.add("minecraft:carrot");
-        ids.add("minecraft:beetroot_seeds");
         ids.add("minecraft:pumpkin_seeds");
-        ids.add("minecraft:melon_seeds");
         ids.add("minecraft:sweet_berries");
         ids.add("minecraft:cocoa_beans");
+        ids.add("minecraft:torchflower_seeds");
+        ids.add("minecraft:sugar_cane");
+        ids.add("minecraft:vine");
         ids.add("minecraft:bone_meal");
-        ids.add("minecraft:hay_block");
+        
+        ids.add("minecraft:beetroot_seeds");
+        ids.add("minecraft:carrot");
+        ids.add("minecraft:melon_seeds");
+        ids.add("minecraft:glow_berries");
+        ids.add("minecraft:bamboo");
+        ids.add("minecraft:pitcher_pod");
         ids.add("minecraft:cactus");
         ids.add("minecraft:cactus_flower");
-        ids.add("minecraft:sugar_cane");
-        ids.add("minecraft:bamboo");
-        ids.add("minecraft:vine");
-        ids.add("minecraft:glow_berries");
         ids.add("minecraft:sniffer_egg");
-        ids.add("minecraft:turtle_egg");
+
+        
         ids.add("minecraft:dried_kelp_block");
         ids.add("minecraft:kelp");
         ids.add("minecraft:sea_pickle");
@@ -219,7 +226,8 @@ public class NaturalBlocksTab implements TabSorter {
         ids.add("minecraft:big_dripleaf");
         ids.add("minecraft:small_dripleaf");
         ids.add("minecraft:frogspawn");
-        ids.add("minecraft:conduit");
+        ids.add("minecraft:turtle_egg");
+
 
         ids.add("minecraft:amethyst_block");
         ids.add("minecraft:budding_amethyst");
@@ -230,15 +238,14 @@ public class NaturalBlocksTab implements TabSorter {
         ids.add("minecraft:cobweb");
         ids.add("minecraft:dripstone_block");
         ids.add("minecraft:pointed_dripstone");
+
         ids.add("minecraft:sculk");
         ids.add("minecraft:sculk_catalyst");
         ids.add("minecraft:sculk_sensor");
         ids.add("minecraft:calibrated_sculk_sensor");
         ids.add("minecraft:sculk_shrieker");
         ids.add("minecraft:sculk_vein");
-        ids.add("minecraft:chorus_plant");
-        ids.add("minecraft:chorus_flower");
-        ids.add("minecraft:dragon_egg");
+        
 
         addCoralPack(ids, "tube");
         addCoralPack(ids, "fire");

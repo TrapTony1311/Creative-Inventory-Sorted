@@ -22,17 +22,17 @@ public class BuildingBlocksTab implements TabSorter {
     private record Wood(String type, Family family) {}
 
     private static final List<Wood> WOODS = List.of(
-        new Wood("pale_oak", Family.OVERWORLD),
-        new Wood("birch",    Family.OVERWORLD),
-        new Wood("oak",      Family.OVERWORLD),
-        new Wood("spruce",   Family.OVERWORLD),
         new Wood("dark_oak", Family.OVERWORLD),
+        new Wood("spruce",   Family.OVERWORLD),
+        new Wood("oak",      Family.OVERWORLD),
+        new Wood("bamboo",   Family.BAMBOO),
+        new Wood("birch",    Family.OVERWORLD),
+        new Wood("pale_oak", Family.OVERWORLD),
+        new Wood("cherry",   Family.OVERWORLD),
+        new Wood("jungle",   Family.OVERWORLD),
         new Wood("acacia",   Family.OVERWORLD),
         new Wood("mangrove", Family.OVERWORLD),
         new Wood("crimson",  Family.NETHER),
-        new Wood("cherry",   Family.OVERWORLD),
-        new Wood("jungle",   Family.OVERWORLD),
-        new Wood("bamboo",   Family.BAMBOO),
         new Wood("warped",   Family.NETHER)
     );
 
@@ -43,49 +43,29 @@ public class BuildingBlocksTab implements TabSorter {
         "minecraft:dirt_path",
         "minecraft:crimson_nylium",
         "minecraft:warped_nylium",
-        "minecraft:moss_block",
-        "minecraft:pale_moss_block",
-        "minecraft:slime_block",
+        "minecraft:mud",
+        "minecraft:muddy_mangrove_roots",
+        "minecraft:mangrove_roots",
 
         "minecraft:dirt",
         "minecraft:coarse_dirt",
         "minecraft:rooted_dirt",
         "minecraft:farmland",
+        "minecraft:terracotta",
         "minecraft:dripstone_block",
         "minecraft:pointed_dripstone",
-        "minecraft:mud",
-        "minecraft:muddy_mangrove_roots",
-        "minecraft:mangrove_roots",
+        "minecraft:moss_block",
+        "minecraft:pale_moss_block",
 
+        "minecraft:clay",
+        "minecraft:calcite",
         "minecraft:snow_block",
-        "minecraft:snow",
-        "minecraft:bee_nest",
-        "minecraft:honeycomb_block",
-        "minecraft:honey_block",
-        "minecraft:hay_block",
-        "minecraft:sponge",
-        "minecraft:wet_sponge",
-        "minecraft:bamboo_block",
-
         "minecraft:ice",
         "minecraft:packed_ice",
         "minecraft:blue_ice",
-        "minecraft:calcite",
-        "minecraft:clay",
-        "minecraft:terracotta",
-        "minecraft:brown_mushroom_block",
-        "minecraft:red_mushroom_block",
-        "minecraft:mushroom_stem",
-
-        "minecraft:bookshelf",
-        "minecraft:chiseled_bookshelf",
-        "minecraft:beehive",
         "minecraft:tinted_glass",
         "minecraft:glass",
-        "minecraft:glass_pane",
-        "minecraft:tnt",
-        "minecraft:nether_wart_block",
-        "minecraft:warped_wart_block"
+        "minecraft:glass_pane"
     );
 
     @Override
@@ -121,12 +101,6 @@ public class BuildingBlocksTab implements TabSorter {
 
             stacks.removeIf(stack -> {
                 String id = BuiltInRegistries.ITEM.getKey(stack.getItem()).toString();
-                if (id.endsWith("_button") || id.endsWith("_pressure_plate")) {
-                    return true;
-                }
-                if ((id.endsWith("_door") || id.endsWith("_fence") || id.endsWith("_fence_gate")) && !id.equals("minecraft:nether_brick_fence")) {
-                    return true;
-                }
                 return !rank.containsKey(id);
             });
 
@@ -314,7 +288,6 @@ public class BuildingBlocksTab implements TabSorter {
         ids.add("minecraft:prismarine_brick_stairs");
         ids.add("minecraft:prismarine_brick_slab");
         ids.add("minecraft:dried_kelp_block");
-        
     }
 
     private static void addQuartzAndSandstoneMatrix(List<String> ids) {
@@ -416,104 +389,199 @@ public class BuildingBlocksTab implements TabSorter {
         ids.add("minecraft:exposed_copper");
         ids.add("minecraft:weathered_copper");
         ids.add("minecraft:oxidized_copper");
+        ids.add("minecraft:vault");
         ids.add("minecraft:waxed_oxidized_copper");
         ids.add("minecraft:waxed_weathered_copper");
         ids.add("minecraft:waxed_exposed_copper");
         ids.add("minecraft:waxed_copper_block");
-        ids.add("minecraft:vault");
+        
 
         ids.add("minecraft:cut_copper");
         ids.add("minecraft:exposed_cut_copper");
         ids.add("minecraft:weathered_cut_copper");
         ids.add("minecraft:oxidized_cut_copper");
+        ids.add("minecraft:trial_spawner");
         ids.add("minecraft:waxed_oxidized_cut_copper");
         ids.add("minecraft:waxed_weathered_cut_copper");
         ids.add("minecraft:waxed_exposed_cut_copper");
         ids.add("minecraft:waxed_cut_copper");
-        ids.add("minecraft:trial_spawner");
+        
 
         ids.add("minecraft:cut_copper_stairs");
         ids.add("minecraft:exposed_cut_copper_stairs");
         ids.add("minecraft:weathered_cut_copper_stairs");
         ids.add("minecraft:oxidized_cut_copper_stairs");
+        ids.add("minecraft:spawner");
         ids.add("minecraft:waxed_oxidized_cut_copper_stairs");
         ids.add("minecraft:waxed_weathered_cut_copper_stairs");
         ids.add("minecraft:waxed_exposed_cut_copper_stairs");
         ids.add("minecraft:waxed_cut_copper_stairs");
-        ids.add("minecraft:spawner");
+        
 
         ids.add("minecraft:cut_copper_slab");
         ids.add("minecraft:exposed_cut_copper_slab");
         ids.add("minecraft:weathered_cut_copper_slab");
         ids.add("minecraft:oxidized_cut_copper_slab");
+        ids.add("minecraft:creaking_heart");
         ids.add("minecraft:waxed_oxidized_cut_copper_slab");
         ids.add("minecraft:waxed_weathered_cut_copper_slab");
         ids.add("minecraft:waxed_exposed_cut_copper_slab");
         ids.add("minecraft:waxed_cut_copper_slab");
-        ids.add("minecraft:creaking_heart");
+        
         
         ids.add("minecraft:copper_trapdoor");
         ids.add("minecraft:exposed_copper_trapdoor");
         ids.add("minecraft:weathered_copper_trapdoor");
         ids.add("minecraft:oxidized_copper_trapdoor");
+        ids.add("minecraft:iron_trapdoor");
         ids.add("minecraft:waxed_oxidized_copper_trapdoor");
         ids.add("minecraft:waxed_weathered_copper_trapdoor");
         ids.add("minecraft:waxed_exposed_copper_trapdoor");
         ids.add("minecraft:waxed_copper_trapdoor");
-        ids.add("minecraft:iron_trapdoor");
+        
 
         ids.add("minecraft:chiseled_copper");
         ids.add("minecraft:exposed_chiseled_copper");
         ids.add("minecraft:weathered_chiseled_copper");
         ids.add("minecraft:oxidized_chiseled_copper");
+        ids.add("minecraft:lodestone");
         ids.add("minecraft:waxed_oxidized_chiseled_copper");
         ids.add("minecraft:waxed_weathered_chiseled_copper");
         ids.add("minecraft:waxed_exposed_chiseled_copper");
         ids.add("minecraft:waxed_chiseled_copper");
-        ids.add("minecraft:lodestone");
+        
 
         ids.add("minecraft:copper_grate");
         ids.add("minecraft:exposed_copper_grate");
         ids.add("minecraft:weathered_copper_grate");
         ids.add("minecraft:oxidized_copper_grate");
+        ids.add("minecraft:scaffolding");
         ids.add("minecraft:waxed_oxidized_copper_grate");
         ids.add("minecraft:waxed_weathered_copper_grate");
         ids.add("minecraft:waxed_exposed_copper_grate");
         ids.add("minecraft:waxed_copper_grate");
-        ids.add("minecraft:end_portal_frame");
+        
 
         ids.add("minecraft:copper_bulb");
         ids.add("minecraft:exposed_copper_bulb");
         ids.add("minecraft:weathered_copper_bulb");
         ids.add("minecraft:oxidized_copper_bulb");
+        ids.add("minecraft:redstone_lamp");
         ids.add("minecraft:waxed_oxidized_copper_bulb");
         ids.add("minecraft:waxed_weathered_copper_bulb");
         ids.add("minecraft:waxed_exposed_copper_bulb");
         ids.add("minecraft:waxed_copper_bulb");
-        ids.add("minecraft:redstone_lamp");
+        
 
         ids.add("minecraft:copper_door");
         ids.add("minecraft:exposed_copper_door");
         ids.add("minecraft:weathered_copper_door");
         ids.add("minecraft:oxidized_copper_door");
+        ids.add("minecraft:iron_door");
         ids.add("minecraft:waxed_oxidized_copper_door");
         ids.add("minecraft:waxed_weathered_copper_door");
         ids.add("minecraft:waxed_exposed_copper_door");
         ids.add("minecraft:waxed_copper_door");
-        ids.add("minecraft:iron_door");
+
+        ids.add("minecraft:copper_bars");
+        ids.add("minecraft:exposed_copper_bars");
+        ids.add("minecraft:weathered_copper_bars");
+        ids.add("minecraft:oxidized_copper_bars");
+        ids.add("minecraft:iron_bars");
+        ids.add("minecraft:waxed_oxidized_copper_bars");
+        ids.add("minecraft:waxed_weathered_copper_bars");
+        ids.add("minecraft:waxed_exposed_copper_bars");
+        ids.add("minecraft:waxed_copper_bars");
+
+        ids.add("minecraft:copper_chain");
+        ids.add("minecraft:exposed_copper_chain");
+        ids.add("minecraft:weathered_copper_chain");
+        ids.add("minecraft:oxidized_copper_chain");
+        ids.add("minecraft:iron_chain");
+        ids.add("minecraft:waxed_oxidized_copper_chain");
+        ids.add("minecraft:waxed_weathered_copper_chain");
+        ids.add("minecraft:waxed_exposed_copper_chain");
+        ids.add("minecraft:waxed_copper_chain");
+        
     }
 
     private static void addCore(List<String> ids, Wood w) {
         String t = w.type();
         switch (w.family()) {
             case OVERWORLD -> {
-                ids.add("minecraft:" + t + "_log"); ids.add("minecraft:" + t + "_wood"); ids.add("minecraft:stripped_" + t + "_log"); ids.add("minecraft:stripped_" + t + "_wood"); ids.add("minecraft:" + t + "_planks"); ids.add("minecraft:" + t + "_stairs"); ids.add("minecraft:" + t + "_slab"); ids.add("minecraft:" + t + "_shelf"); ids.add("minecraft:" + t + "_trapdoor");
+                ids.add("minecraft:" + t + "_log");
+                ids.add("minecraft:" + t + "_wood");
+                ids.add("minecraft:stripped_" + t + "_log");
+                ids.add("minecraft:stripped_" + t + "_wood");
+                ids.add("minecraft:" + t + "_planks");
+                ids.add("minecraft:" + t + "_stairs");
+                ids.add("minecraft:" + t + "_slab");
+                ids.add("minecraft:" + t + "_fence");
+                ids.add("minecraft:" + t + "_fence_gate");
+
+                ids.add("minecraft:" + t + "_leaves");
+                if (t.equals("mangrove")) {
+                    ids.add("minecraft:mangrove_propagule");
+                } else {
+                    ids.add("minecraft:" + t + "_sapling");
+                }
+
+                ids.add("minecraft:" + t + "_door");
+                ids.add("minecraft:" + t + "_shelf");
+                ids.add("minecraft:" + t + "_trapdoor");
+                ids.add("minecraft:" + t + "_sign");
+                ids.add("minecraft:" + t + "_hanging_sign");
+                ids.add("minecraft:" + t + "_pressure_plate");
+                ids.add("minecraft:" + t + "_button");
             }
             case NETHER -> {
-                ids.add("minecraft:" + t + "_stem"); ids.add("minecraft:" + t + "_hyphae"); ids.add("minecraft:stripped_" + t + "_stem"); ids.add("minecraft:stripped_" + t + "_hyphae"); ids.add("minecraft:" + t + "_planks"); ids.add("minecraft:" + t + "_stairs"); ids.add("minecraft:" + t + "_slab"); ids.add("minecraft:" + t + "_shelf"); ids.add("minecraft:" + t + "_trapdoor");
+                ids.add("minecraft:" + t + "_stem");
+                ids.add("minecraft:" + t + "_hyphae");
+                ids.add("minecraft:stripped_" + t + "_stem");
+                ids.add("minecraft:stripped_" + t + "_hyphae");
+                ids.add("minecraft:" + t + "_planks");
+                ids.add("minecraft:" + t + "_stairs");
+                ids.add("minecraft:" + t + "_slab");
+                ids.add("minecraft:" + t + "_fence");
+                ids.add("minecraft:" + t + "_fence_gate");
+
+                if (t.equals("crimson")) {
+                    ids.add("minecraft:nether_wart_block");
+                } else if (t.equals("warped")) {
+                    ids.add("minecraft:warped_wart_block");
+                }
+                ids.add("minecraft:" + t + "_fungus");
+                
+                ids.add("minecraft:" + t + "_door");
+                ids.add("minecraft:" + t + "_shelf");
+                ids.add("minecraft:" + t + "_trapdoor");
+                ids.add("minecraft:" + t + "_sign");
+                ids.add("minecraft:" + t + "_hanging_sign");
+                ids.add("minecraft:" + t + "_pressure_plate");
+                ids.add("minecraft:" + t + "_button");
             }
             case BAMBOO -> {
-                ids.add("minecraft:stripped_bamboo_block"); ids.add("minecraft:bamboo_planks"); ids.add("minecraft:bamboo_stairs"); ids.add("minecraft:bamboo_slab"); ids.add("minecraft:bamboo_mosaic"); ids.add("minecraft:bamboo_mosaic_stairs"); ids.add("minecraft:bamboo_mosaic_slab"); ids.add("minecraft:bamboo_shelf"); ids.add("minecraft:" + t + "_trapdoor");
+                ids.add("minecraft:bamboo_block");
+                ids.add("minecraft:stripped_bamboo_block");
+                ids.add("minecraft:bamboo_planks");
+                ids.add("minecraft:bamboo_stairs");
+                ids.add("minecraft:bamboo_slab");
+                ids.add("minecraft:bamboo_mosaic");
+                ids.add("minecraft:bamboo_mosaic_stairs");
+                ids.add("minecraft:bamboo_mosaic_slab");
+                ids.add("minecraft:bamboo_fence");
+                ids.add("minecraft:bamboo_fence_gate");
+
+                ids.add("minecraft:bamboo_block");
+                ids.add("minecraft:bamboo");
+                
+                ids.add("minecraft:bamboo_door");
+                ids.add("minecraft:bamboo_shelf");
+                ids.add("minecraft:bamboo_trapdoor");
+                ids.add("minecraft:bamboo_sign");
+                ids.add("minecraft:bamboo_hanging_sign");
+                ids.add("minecraft:bamboo_pressure_plate");
+                ids.add("minecraft:bamboo_button");
             }
         }
     }
