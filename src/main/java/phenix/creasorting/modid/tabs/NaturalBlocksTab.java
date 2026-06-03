@@ -59,8 +59,52 @@ public class NaturalBlocksTab implements TabSorter {
         });
     }
 
+    private static final List<String> NATURAL_BLOCKS = List.of(
+        "minecraft:grass_block",
+        "minecraft:podzol",
+        "minecraft:mycelium",
+        "minecraft:dirt_path",
+        "minecraft:crimson_nylium",
+        "minecraft:warped_nylium",
+        "minecraft:moss_block",
+        "minecraft:pale_moss_block",
+        "minecraft:slime_block",
+
+        "minecraft:dirt",
+        "minecraft:coarse_dirt",
+        "minecraft:rooted_dirt",
+        "minecraft:farmland",
+        "minecraft:dripstone_block",
+        "minecraft:pointed_dripstone",
+        "minecraft:mud",
+        "minecraft:muddy_mangrove_roots",
+        "minecraft:mangrove_roots",
+
+        "minecraft:snow_block",
+        "minecraft:snow",
+        "minecraft:bee_nest",
+        "minecraft:honeycomb_block",
+        "minecraft:honey_block",
+        "minecraft:hay_block",
+        "minecraft:sponge",
+        "minecraft:wet_sponge",
+        "minecraft:bamboo_block",
+
+        "minecraft:ice",
+        "minecraft:packed_ice",
+        "minecraft:blue_ice",
+        "minecraft:calcite",
+        "minecraft:clay",
+        "minecraft:terracotta",
+        "minecraft:brown_mushroom_block",
+        "minecraft:red_mushroom_block",
+        "minecraft:mushroom_stem"
+    );
+
     private static List<String> buildFullOrder() {
         List<String> ids = new ArrayList<>();
+
+        ids.addAll(NATURAL_BLOCKS);
 
         ids.add("minecraft:oak_leaves");
         ids.add("minecraft:spruce_leaves");

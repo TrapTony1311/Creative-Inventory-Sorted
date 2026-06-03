@@ -137,8 +137,9 @@ public class BuildingBlocksTab implements TabSorter {
 
     private static List<String> buildFullOrder() {
         List<String> ids = new ArrayList<>();
-        for (Wood w : WOODS) addCore(ids, w);
         ids.addAll(NATURAL_BLOCKS);
+        for (Wood w : WOODS) addCore(ids, w);
+        
         addStoneMatrix(ids);
         addDeepslateAndTuffMatrix(ids);
         addNetherAndEndMatrix(ids);
