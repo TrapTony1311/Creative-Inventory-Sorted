@@ -77,12 +77,12 @@ public class ToolsAndUtilitiesTab implements TabSorter {
             "minecraft:debug_stick", "minecraft:flint_and_steel", "minecraft:shears", "minecraft:clock", "minecraft:spyglass",
             "minecraft:name_tag", "minecraft:lead", "minecraft:saddle", "minecraft:golden_dandelion", "minecraft:writable_book", 
             "minecraft:elytra", "minecraft:firework_rocket", "minecraft:firework_rocket", "minecraft:firework_rocket", "minecraft:map",
-            "minecraft:turtle_helmet", "minecraft:brush", "minecraft:totem_of_undying", "minecraft:ender_pearl", "minecraft:ender_eye",
-            "minecraft:bucket", "minecraft:water_bucket", "minecraft:lava_bucket", "minecraft:powder_snow_bucket", "minecraft:milk_bucket",
+            "minecraft:turtle_helmet", "minecraft:brush", "minecraft:totem_of_undying", "minecraft:ender_pearl", "minecraft:bucket",
+            "minecraft:water_bucket", "minecraft:lava_bucket", "minecraft:powder_snow_bucket", "minecraft:milk_bucket", "minecraft:sulfur_cube_bucket",
             "minecraft:cod_bucket", "minecraft:salmon_bucket", "minecraft:tropical_fish_bucket", "minecraft:pufferfish_bucket", "minecraft:axolotl_bucket"
         );
 
-        List<String> tiers = List.of("wooden", "stone", "copper", "iron", "golden", "diamond", "netherite");
+        List<String> tiers = List.of("netherite", "diamond", "golden", "iron", "copper", "stone", "wooden");
 
         int utilityIndex = 0;
         for (String tier : tiers) {
@@ -178,7 +178,7 @@ public class ToolsAndUtilitiesTab implements TabSorter {
             "minecraft:music_disc_stal",
             "minecraft:music_disc_strad",
             "minecraft:trial_key",
-            "minecraft:snowball",
+            "minecraft:music_disc_bounce",
             "minecraft:music_disc_creator_music_box",
             "minecraft:music_disc_precipice",
             "minecraft:music_disc_creator",

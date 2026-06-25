@@ -108,7 +108,7 @@ public class SpawnEggsTab implements TabSorter {
             "minecraft:pillager_spawn_egg",
             "minecraft:ravager_spawn_egg",
             "minecraft:evoker_spawn_egg",
-            "minecraft:silverfish_spawn_egg",
+            "minecraft:sulfur_cube_spawn_egg",
             "minecraft:zombie_spawn_egg",
             "minecraft:zombie_villager_spawn_egg",
             "minecraft:zombie_nautilus_spawn_egg",
@@ -135,7 +135,7 @@ public class SpawnEggsTab implements TabSorter {
             "minecraft:zoglin_spawn_egg",
             "minecraft:wither_skeleton_spawn_egg",
             "minecraft:happy_ghast_spawn_egg",
-            "minecraft:phantom_spawn_egg",
+            "minecraft:silverfish_spawn_egg",
             "minecraft:skeleton_spawn_egg",
             "minecraft:parched_spawn_egg",
             "minecraft:stray_spawn_egg",
@@ -144,6 +144,7 @@ public class SpawnEggsTab implements TabSorter {
             "minecraft:enderman_spawn_egg",
             "minecraft:ender_dragon_spawn_egg",
             "minecraft:wither_spawn_egg",
+            "minecraft:phantom_spawn_egg",
             "minecraft:warden_spawn_egg"
         );
 

@@ -245,6 +245,10 @@ public class NaturalBlocksTab implements TabSorter {
         ids.add("minecraft:calibrated_sculk_sensor");
         ids.add("minecraft:sculk_shrieker");
         ids.add("minecraft:sculk_vein");
+
+        ids.add("minecraft:potent_sulfur");
+        ids.add("minecraft:sulfur");
+        ids.add("minecraft:sulfur_spike");
         
 
         addCoralPack(ids, "tube");

@@ -70,7 +70,7 @@ public class CombatTab implements TabSorter {
             "minecraft:wind_charge", "minecraft:snowball"
         );
 
-        List<String> tiers = List.of("wooden", "stone", "copper", "iron", "golden", "diamond", "netherite");
+        List<String> tiers = List.of("netherite", "diamond", "golden", "iron", "copper", "stone", "wooden");
 
         int utilityIndex = 0;
         for (String tier : tiers) {

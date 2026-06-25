@@ -269,6 +269,37 @@ public class BuildingBlocksTab implements TabSorter {
         ids.add("minecraft:mud_brick_slab");
         ids.add("minecraft:mud_brick_wall");
 
+        ids.add("minecraft:cinnabar");
+        ids.add("minecraft:cinnabar_stairs");
+        ids.add("minecraft:cinnabar_slab");
+        ids.add("minecraft:cinnabar_wall");
+        ids.add("minecraft:chiseled_cinnabar");
+        ids.add("minecraft:polished_cinnabar");
+        ids.add("minecraft:polished_cinnabar_stairs");
+        ids.add("minecraft:polished_cinnabar_slab");
+        ids.add("minecraft:polished_cinnabar_wall");
+
+        ids.add("minecraft:cinnabar_bricks");
+        ids.add("minecraft:cinnabar_brick_stairs");
+        ids.add("minecraft:cinnabar_brick_slab");
+        ids.add("minecraft:cinnabar_brick_wall");
+        ids.add("minecraft:potent_sulfur");
+        ids.add("minecraft:sulfur_bricks");
+        ids.add("minecraft:sulfur_brick_stairs");
+        ids.add("minecraft:sulfur_brick_slab");
+        ids.add("minecraft:sulfur_brick_wall");
+
+        ids.add("minecraft:sulfur");
+        ids.add("minecraft:sulfur_stairs");
+        ids.add("minecraft:sulfur_slab");
+        ids.add("minecraft:sulfur_wall");
+        ids.add("minecraft:chiseled_sulfur");
+        ids.add("minecraft:polished_sulfur");
+        ids.add("minecraft:polished_sulfur_stairs");
+        ids.add("minecraft:polished_sulfur_slab");
+        ids.add("minecraft:polished_sulfur_wall");
+
+
         ids.add("minecraft:resin_bricks");
         ids.add("minecraft:resin_brick_stairs");
         ids.add("minecraft:resin_brick_slab");

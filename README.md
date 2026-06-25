@@ -1,4 +1,4 @@
-# Creative Inventory Sorting
+# Creative Inventory sorting
 
 ## Setup
 
